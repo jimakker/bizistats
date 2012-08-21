@@ -1,16 +1,15 @@
-bizistats
-=========
+#bizistats
 
-Donostiako bizikleta publikoen zerbitzuak eskeintzen duen APIa darabilkien nodejs+angularjs+bootstrap aplikazioa
+**Donostia**ko bizikleta publikoen zerbitzuak eskeintzen duen APIa darabilkien nodejs+angularjs+bootstrap aplikazioa
 
-Arratsalde/Gau bateko proiektua da, oso xinplea.  
+> Arratsalde/Gau bateko proiektua da, oso xinplea. Kontuan hartu hori!  
 
 [Node.js](http://nodejs.org/) zerbitzaria, [AngularJS](http://www.angularjs.org/) javascript frameworka eta [Twitter Bootstrap](http://twitter.github.com/bootstrap/) js/css frameworka erabiliz sortua. 
 
 Datuak fitxategi batean gordetzen ditu, inungo lotsarik gabe. Gainera, APIak zerbitzatzen dituen datu inefizienteak inefizienteki gordetzen ditu zuzenean.
 
-NodeJS Dependencies
--------------------
+##NodeJS Dependencies
+
 
 * [Express.js](http://expressjs.com/)
 * [Request](https://github.com/mikeal/request)
@@ -20,3 +19,8 @@ NodeJS Dependencies
 [DEMO](http://bizistats.nodester.com)
 ----
 hosted @ [Nodester](http://nodester.com)
+
+
+###Installation
+
+Instalatu beharrezko moduluak *npm* erabiliz eta exekutatu **server.js** *node* erabiliz
