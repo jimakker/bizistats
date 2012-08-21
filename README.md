@@ -23,4 +23,4 @@ hosted @ [Nodester](http://nodester.com)
 
 ###Installation
 
-Errepositorioa klonatu , instalatu beharrezko moduluak *npm* erabiliz eta exekutatu **server.js** *node* erabiliz
+Errepositorioa klonatu , instalatu beharrezko moduluak *npm* erabiliz, exekutatu **server.js** *node* erabiliz eta jo [http://localhost:3000](http://localhost:3000) helbidera. Kontuan hartu 5 minuturo gordetzen dituela datuak, beraz ez larritu.
