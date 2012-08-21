@@ -5,7 +5,7 @@ Donostiako bizikleta publikoen zerbitzuak eskeintzen duen APIa darabilkien nodej
 
 Arratsalde/Gau bateko proiektua da, oso xinplea.  
 
-Node.js zerbitzaria, AngularJS javascript frameworka eta Twitter Bootstrap js/css frameworka erabiliz sortua. 
+[Node.js](http://nodejs.org/) zerbitzaria, [AngularJS](http://www.angularjs.org/) javascript frameworka eta [Twitter Bootstrap](http://twitter.github.com/bootstrap/) js/css frameworka erabiliz sortua. 
 
 Datuak fitxategi batean gordetzen ditu, inungo lotsarik gabe. Gainera, APIak zerbitzatzen dituen datu inefizienteak inefizienteki gordetzen ditu zuzenean.
 
