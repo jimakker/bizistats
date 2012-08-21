@@ -63,32 +63,36 @@ var statsArray = exports.statsArray =  [];
 
 
 setInterval(function(){
-  request('http://www.donostia.org/info/ciudadano/camaras_trafico.nsf/dameEstaciones?OpenAgent&idioma=cas', function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      statsArray.push({date: new Date(),data: JSON.parse(body)})
-      path.exists("file", function (exists) {
-        if(exists){
-          new BufferedWriter ("file", { encoding: "utf8",append: true})
-          .on ("error", function (error){
-              console.log (error);
-          })
-          .newLine () 
-          .write (JSON.stringify({date: new Date(),data: JSON.parse(body)})) 
-          .close ();
-        } else {
-          new BufferedWriter ("file", { encoding: "utf8"})
-          .on ("error", function (error){
-              console.log (error);
-          })
-          .write (JSON.stringify({date: new Date(),data: JSON.parse(body)})) 
-          .close ();
-        }
-      });
+  var d = new Date();
+  if(d.getHours()>21 || d.getHours()<5){ // dirudienez nodester.com zerbitzarian GMT darabilkite. Hau txapuza bat da
+    // console.log("Discarding lecture");
+  } else {
+    request('http://www.donostia.org/info/ciudadano/camaras_trafico.nsf/dameEstaciones?OpenAgent&idioma=cas', function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        statsArray.push({date: new Date(),data: JSON.parse(body)})
+        path.exists("file", function (exists) {
+          if(exists){
+            new BufferedWriter ("file", { encoding: "utf8",append: true})
+            .on ("error", function (error){
+                console.log (error);
+            })
+            .newLine () 
+            .write (JSON.stringify({date: new Date(),data: JSON.parse(body)})) 
+            .close ();
+          } else {
+            new BufferedWriter ("file", { encoding: "utf8"})
+            .on ("error", function (error){
+                console.log (error);
+            })
+            .write (JSON.stringify({date: new Date(),data: JSON.parse(body)})) 
+            .close ();
+          }
+        });
 
-    }
-  })
-  }, 60000)
-
+      }
+    })
+  }
+}, 60000)
 
 
   function readLines(input, func) {
