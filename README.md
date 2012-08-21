@@ -4,7 +4,7 @@
 
 > Arratsalde/Gau bateko proiektua da, oso xinplea. Kontuan hartu hori!  
 
-[Node.js](http://nodejs.org/) zerbitzaria, [AngularJS](http://www.angularjs.org/) javascript frameworka eta [Twitter Bootstrap](http://twitter.github.com/bootstrap/) js/css frameworka erabiliz sortua, [jQuery](http://jquery.org) ahaztu gabe. 
+[Node.js](http://nodejs.org/) zerbitzaria, [AngularJS](http://www.angularjs.org/) javascript frameworka eta [Twitter Bootstrap](http://twitter.github.com/bootstrap/) js/css frameworka erabiliz sortua, [jQuery](http://jquery.org) eta [Moment.js](http://momentjs.com/) ahaztu gabe. 
 
 Datuak fitxategi batean gordetzen ditu minuturo, inungo lotsarik gabe. Gainera, APIak zerbitzatzen dituen datu inefizienteak inefizienteki gordetzen ditu zuzenean.
 
