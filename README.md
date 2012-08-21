@@ -2,7 +2,7 @@
 
 **Donostia**ko **bizikleta publiko**en zerbitzuak eskeintzen duen **API**a darabilkien **web aplikazioa** da **bizistats**.
 
-**bizistats** is a **webapp** that uses data provided by the **public bike service** **API** from **Donostia - San Sebastian**.
+**bizistats** is a **webapp** that uses data provided by the **public bike service** **API** from [Donostia - San Sebastián](http://en.wikipedia.org/wiki/San_Sebasti%C3%A1n).
 
 > Arratsalde/Gau bateko proiektua da, oso xinplea. Kontuan hartu hori!  
 
