@@ -25,6 +25,9 @@ Egunen batean API serio bat idatziko da... Laguntza eskertua izango da!
 hosted @ [Nodester](http://nodester.com)
 
 
-###Installation
+###Instalazioa
 
-Errepositorioa klonatu , instalatu beharrezko moduluak *npm* erabiliz, exekutatu **server.js** *node* erabiliz eta jo [http://localhost:3000](http://localhost:3000) helbidera. Kontuan hartu 5 minuturo gordetzen dituela datuak, beraz ez larritu.
+* Errepositorioa klonatu
+* Instalatu beharrezko moduluak *npm* erabiliz
+* Exekutatu **server.js** *node* erabiliz
+* Jo [http://localhost:3000](http://localhost:3000) helbidera. Kontuan hartu bost minuturoko datuak erakusten direla, beraz ez larritu lehen bost minutuetan.
