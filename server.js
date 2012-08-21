@@ -9,6 +9,7 @@ var express = require('express'),
 var request = require('request');
 var BufferedWriter = require('buffered-writer');
 var fs = require('fs');
+var path = require('path');
 
 var app = module.exports = express();
 
@@ -52,7 +53,7 @@ app.get('*', routes.index);
 // Start server
 
 app.listen(3000, function(){
-  // console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+  console.log("Server started");
 });
 
 
@@ -64,18 +65,26 @@ var statsArray = exports.statsArray =  [];
 setInterval(function(){
   request('http://www.donostia.org/info/ciudadano/camaras_trafico.nsf/dameEstaciones?OpenAgent&idioma=cas', function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      // console.log(body) // Print the google web page.
       statsArray.push({date: new Date(),data: JSON.parse(body)})
-      new BufferedWriter ("file", { encoding: "utf8",append: true})
-    .on ("error", function (error){
-        console.log (error);
-    })
+      path.exists("file", function (exists) {
+        if(exists){
+          new BufferedWriter ("file", { encoding: "utf8",append: true})
+          .on ("error", function (error){
+              console.log (error);
+          })
+          .newLine () 
+          .write (JSON.stringify({date: new Date(),data: JSON.parse(body)})) 
+          .close ();
+        } else {
+          new BufferedWriter ("file", { encoding: "utf8"})
+          .on ("error", function (error){
+              console.log (error);
+          })
+          .write (JSON.stringify({date: new Date(),data: JSON.parse(body)})) 
+          .close ();
+        }
+      });
 
-    //From the end of the file:
-    .newLine () //Writes EOL (OS dependent; \r\n on Windows, otherwise \n)
-    .write (JSON.stringify({date: new Date(),data: JSON.parse(body)})) //Writes "Third line"
-    .close (); //Closes the writer. A flush is implicitly done.
-      // console.log(statsArray)
     }
   })
   }, 60000)
@@ -106,30 +115,17 @@ setInterval(function(){
   });
 }
 
-
-// var input = fs.createReadStream('file');
-console.log("Going to read lines");
-console.log("TROLLACO");
-// readLines(input, func);
+path.exists("file", function (exists) {
+  if(exists){
+    var input = fs.createReadStream('file');
+    readLines(input, func);
+  }  
+});
 
 
 var historyArray = exports.historyArray =  [];
 
 function func(data) {
-  console.log(data);
-  if(typeof data!="undefined"){
-    console.log("DEFINED");
-  } else {
-    console.log("UNDEFINED");
-  }
-  if(data!=null){
-    console.log("NOT NULL");
-  } else {
-    console.log("NULL");
-  }
-
-    console.log('Line: ' + data);
     historyArray.push(JSON.parse(data));
     statsArray.push(JSON.parse(data));
- 
 }
