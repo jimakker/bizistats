@@ -1,6 +1,6 @@
 #bizistats
 
-**Donostia**ko **bizikleta publiko**en zerbitzuak eskeintzen duen **API**a darabilkien web aplikazioa da **bizistats**.
+**Donostia**ko **bizikleta publiko**en zerbitzuak eskeintzen duen **API**a darabilkien **web aplikazioa** da **bizistats**.
 
 > Arratsalde/Gau bateko proiektua da, oso xinplea. Kontuan hartu hori!  
 
