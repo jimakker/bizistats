@@ -27,7 +27,10 @@ hosted @ [Nodester](http://nodester.com)
 
 ###Instalazioa
 
-* Errepositorioa klonatu > git clone git://github.com/jimakker/bizistats.git
+* Errepositorioa klonatu 
+```bash
+git clone git://github.com/jimakker/bizistats.git
+```
 * Sortu berri den karpetan sartu > cd bizistats
 * Instalatu beharrezko moduluak *npm* erabiliz > npm install express jade request buffered-writer
 * Exekutatu **server.js** *node* erabiliz > node server.js
