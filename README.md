@@ -23,4 +23,4 @@ hosted @ [Nodester](http://nodester.com)
 
 ###Installation
 
-Instalatu beharrezko moduluak *npm* erabiliz eta exekutatu **server.js** *node* erabiliz
+Errepositorioa klonatu , instalatu beharrezko moduluak *npm* erabiliz eta exekutatu **server.js** *node* erabiliz
