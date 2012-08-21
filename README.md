@@ -27,8 +27,8 @@ hosted @ [Nodester](http://nodester.com)
 
 ###Instalazioa
 
-* Errepositorioa klonatu: ```git clone git://github.com/jimakker/bizistats.git```
-* Sortu berri den karpetan sartu: ```cd bizistats```
-* Instalatu beharrezko moduluak *npm* erabiliz: ```npm install express jade request buffered-writer```
-* Exekutatu **server.js** *node* erabiliz: ```node server.js```
+* Errepositorioa klonatu: ``git clone git://github.com/jimakker/bizistats.git``
+* Sortu berri den karpetan sartu: ``cd bizistats``
+* Instalatu beharrezko moduluak *npm* erabiliz: ``npm install express jade request buffered-writer``
+* Exekutatu **server.js** *node* erabiliz: ``node server.js``
 * Jo [http://localhost:3000](http://localhost:3000) helbidera. Kontuan hartu bost minuturoko datuak erakusten direla, beraz ez larritu lehen bost minutuetan.
