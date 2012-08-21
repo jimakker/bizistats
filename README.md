@@ -6,7 +6,11 @@
 
 [Node.js](http://nodejs.org/) zerbitzaria, [AngularJS](http://www.angularjs.org/) javascript frameworka eta [Twitter Bootstrap](http://twitter.github.com/bootstrap/) js/css frameworka erabiliz sortua. 
 
-Datuak fitxategi batean gordetzen ditu minuturo, inungo lotsarik gabe. Gainera, APIak zerbitzatzen dituen datu inefizienteak inefizienteki gordetzen ditu zuzenean. Dena dela bezeroak (nahiz eta datu guztiak jasotzen dituen) 5-en multiploa (0,5,10,15,...) diren minutuen datuak erakusten ditu estatistika eran (minuturo ezkerraldeko informazio gunean).
+Datuak fitxategi batean gordetzen ditu minuturo, inungo lotsarik gabe. Gainera, APIak zerbitzatzen dituen datu inefizienteak inefizienteki gordetzen ditu zuzenean.
+
+Bezeroak datu guztiak jasotzen ditu, mega dexente izan daitezke hilabete baten ostean! Dena dela, bezeroak 5-en multiploak (0,5,10,15,...) diren minutuen datuak erakusten ditu estatistika eran (minuturo ezkerraldeko informazio gunean), karga gutxiagotzeko (erraz aldatu daiteke hau, baina kontuan hartu milaka erregistro izan daitezkela!).
+
+Egunen batean API serio bat idatziko da... Laguntza eskertua izango da!
 
 ##NodeJS Dependencies
 
