@@ -32,3 +32,11 @@ hosted @ [Nodester](http://nodester.com)
 * Instalatu beharrezko moduluak *npm* erabiliz: ``npm install express jade request buffered-writer``
 * Exekutatu **server.js** *node* erabiliz: ``node server.js``
 * Jo [http://localhost:3000](http://localhost:3000) helbidera. Kontuan hartu bost minuturoko datuak erakusten direla, beraz ez larritu lehen bost minutuetan.
+
+###Installation
+
+* Clone the repository: ``git clone git://github.com/jimakker/bizistats.git``
+* Go to the newly created directory: ``cd bizistats``
+* Install *Node.js* dependencies using *npm*: ``npm install express jade request buffered-writer``
+* Run **server.js** with *Node.js*: ``node server.js``
+* Go to [http://localhost:3000](http://localhost:3000). Wait 5 minutes. Refresh.
