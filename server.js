@@ -10,7 +10,7 @@ var request = require('request');
 var BufferedWriter = require('buffered-writer');
 var fs = require('fs');
 
-var app = module.exports = express.createServer();
+var app = module.exports = express();
 
 // Configuration
 
@@ -51,8 +51,8 @@ app.get('*', routes.index);
 
 // Start server
 
-app.listen(process.env['app_port'] || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+app.listen(3000, function(){
+  // console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });
 
 
@@ -107,8 +107,9 @@ setInterval(function(){
 }
 
 
-var input = fs.createReadStream('file');
+// var input = fs.createReadStream('file');
 console.log("Going to read lines");
+console.log("TROLLACO");
 // readLines(input, func);
 
 
