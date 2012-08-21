@@ -1,0 +1,78 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.bikes-0 {
+  background: #ff6666!important;
+}
+
+.bikes-1 {
+  background: #ffd9b2!important;
+}
+
+.bikes-2 {
+  background: #fff2e5!important;
+}
+
+
+.change-positive {
+background: none repeat scroll 0 0 green;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    float: left;
+    font-weight: bold;
+    padding-left: 5px;
+    width: 13px;
+    margin-left: 5px;
+}
+
+.change-negative {
+background: none repeat scroll 0 0 red;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    float: left;
+    font-weight: bold;
+    padding-left: 5px;
+    width: 13px;
+    margin-left: 5px;
+}
+
+.change-none {
+  display: none;
+}
+
+/* Custom CSS overriding bootstrap fixong top-navbar and body padding issue */
+@media (min-width: 980px){
+      body {
+        padding-top:60px;
+      }
+}
+
+

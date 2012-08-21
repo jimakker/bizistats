@@ -1,0 +1,23 @@
+.row-fluid
+	.span12
+		.span3.well
+			h1
+				| {{date | formatTime}} 
+			| Bicis en uso {{count}} <span style="font-size:smaller">(de un total <i>supuesto</i> de 150)</span>
+			ul
+				li(ng-repeat="station in stations")
+					| {{station.name}} : {{station.available}} / {{station.total}}
+
+		.span8
+			table.table.table-striped.table-condensed
+				thead
+					tr
+						td
+						td(ng-repeat="station in history[0].data")
+							| {{station.Nombre}} <span title="Plazas Totales">({{station.PlazasTotales}})</span>
+				tbody
+					tr(ng-repeat="h in history")
+						td
+							{{h.date | formatHour}}
+						td(ng-repeat="station in h.data",class="bikes-{{station.BicisDisponibles}}")
+							| <b style="float:left;">{{station.BicisDisponibles}}</b> <span class="change-{{station.chCount | bikesCh}}">{{station.chCount | bikesChNeg}}</span>
