@@ -41,4 +41,4 @@ hosted @ [Nodester](http://nodester.com)
 * Go to the newly created directory: ``cd bizistats``
 * Install *Node.js* dependencies using *npm*: ``npm install express jade request buffered-writer``
 * Run **server.js** with *Node.js*: ``node server.js``
-* Go to [http://localhost:3000](http://localhost:3000). Wait 5 minutes. Refresh. The server saves data only when the sercive is open, so during the night (from Donostia) no data is saved.
+* Go to [http://localhost:3000](http://localhost:3000). Wait 5 minutes. Refresh. The server saves data only when the service is open, so during the night (from Donostia) no data is saved.
