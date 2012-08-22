@@ -33,7 +33,7 @@ hosted @ [Nodester](http://nodester.com)
 * Sortu berri den karpetan sartu: ``cd bizistats``
 * Instalatu beharrezko moduluak *npm* erabiliz: ``npm install express jade request buffered-writer``
 * Exekutatu **server.js** *node* erabiliz: ``node server.js``
-* Jo [http://localhost:3000](http://localhost:3000) helbidera. Kontuan hartu bost minuturoko datuak erakusten direla, beraz ez larritu lehen bost minutuetan. Zerbitzua martxan dabilenean gordetzen dira datuak, beraz gaueko ~10etatik goizeko ~7retara ez da daturik gordetzen. Ondoloin, beraz ;)
+* Jo [http://localhost:3000](http://localhost:3000) helbidera. Kontuan hartu bost minuturoko datuak erakusten direla, beraz ez larritu lehen bost minutuetan. Zerbitzua martxan dabilenean gordetzen dira datuak, gaueko ~10etatik goizeko ~7retara ez da daturik gordetzen. Ondoloin ;)
 
 ###Installation
 
