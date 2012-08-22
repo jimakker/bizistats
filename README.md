@@ -33,7 +33,7 @@ hosted @ [Nodester](http://nodester.com)
 * Sortu berri den karpetan sartu: ``cd bizistats``
 * Instalatu beharrezko moduluak *npm* erabiliz: ``npm install express jade request buffered-writer``
 * Exekutatu **server.js** *node* erabiliz: ``node server.js``
-* Jo [http://localhost:3000](http://localhost:3000) helbidera. Kontuan hartu bost minuturoko datuak erakusten direla, beraz ez larritu lehen bost minutuetan.
+* Jo [http://localhost:3000](http://localhost:3000) helbidera. Kontuan hartu bost minuturoko datuak erakusten direla, beraz ez larritu lehen bost minutuetan. Zerbitzua martxan dabilenean gordetzen dira datuak, beraz gaueko ~10etatik goizeko ~7retara ez da daturik gordetzen. Ondoloin, beraz ;)
 
 ###Installation
 
@@ -41,4 +41,4 @@ hosted @ [Nodester](http://nodester.com)
 * Go to the newly created directory: ``cd bizistats``
 * Install *Node.js* dependencies using *npm*: ``npm install express jade request buffered-writer``
 * Run **server.js** with *Node.js*: ``node server.js``
-* Go to [http://localhost:3000](http://localhost:3000). Wait 5 minutes. Refresh.
+* Go to [http://localhost:3000](http://localhost:3000). Wait 5 minutes. Refresh. The server saves data only when the sercive is open, so during the night (from Donostia) no data is saved.
