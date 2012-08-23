@@ -64,7 +64,7 @@ var statsArray = exports.statsArray =  [];
 
 setInterval(function(){
   var d = new Date();
-  if(d.getHours()>21 || d.getHours()<5){ // dirudienez nodester.com zerbitzarian GMT darabilkite. Hau txapuza bat da
+  if(d.getHours()>20 || d.getHours()<5){ // dirudienez nodester.com zerbitzarian GMT darabilkite. Hau txapuza bat da
     // console.log("Discarding lecture");
   } else {
     request('http://www.donostia.org/info/ciudadano/camaras_trafico.nsf/dameEstaciones?OpenAgent&idioma=cas', function (error, response, body) {
